@@ -164,7 +164,7 @@ module.exports = function (grunt) {
 
     githooks: {
       all: {
-        'pre-commit': 'jscs'
+        'pre-commit': 'jscsSpin'
       }
     },
 
@@ -421,11 +421,11 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'jade',
-        'stylus',
+        'stylus'
       ],
       test: [
         'jade',
-        'stylus',
+        'stylus'
       ],
       debug: {
         tasks: [
@@ -580,7 +580,7 @@ module.exports = function (grunt) {
           ]
         }
       }
-    },
+    }
   });
 
   // Used for delaying livereload until after server has restarted
@@ -699,6 +699,8 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('jscsSpin', ['jscs']);
+
+  grunt.registerTask('githookit', ['githooks']);
 
   grunt.registerTask('default', [
     'jscsSpin',
