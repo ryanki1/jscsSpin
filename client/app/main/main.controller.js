@@ -9,7 +9,9 @@ angular.module('jscsSpinApp')
     });
 
     $scope.addThing = function() {
+      // jscs: disable
       if ($scope['newThing'] === '') {
+        // jscs: enable
         return;
       }
       $http.post('/api/things', {name: $scope.newThing});
