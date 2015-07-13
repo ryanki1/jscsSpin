@@ -5,6 +5,7 @@ angular.module('jscsSpinApp')
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {
+      var x = '';
       $scope.awesomeThings = awesomeThings;
     });
 
