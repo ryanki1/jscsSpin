@@ -14,7 +14,7 @@ angular.module('jscsSpinApp')
         // jscs: enable
         return;
       }
-          $http.post('/api/things', {name: $scope.newThing});
+      $http.post('/api/things', {name: $scope.newThing});
       $scope.newThing = '';
     };
 
