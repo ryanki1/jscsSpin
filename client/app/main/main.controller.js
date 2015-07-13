@@ -19,6 +19,6 @@ angular.module('jscsSpinApp')
     };
 
     $scope.deleteThing = function(thing) {
-        $http.delete('/api/things/' + thing._id);
+      $http.delete('/api/things/' + thing._id);
     };
   });
