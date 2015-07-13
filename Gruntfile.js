@@ -159,9 +159,6 @@ module.exports = function (grunt) {
     },
 
     jscs: {
-      options: {
-        fix: true
-      },
       src: 'client/app/**/*.js'
     },
 
